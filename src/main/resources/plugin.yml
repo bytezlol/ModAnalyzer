@@ -1,0 +1,6 @@
+name: mod-detection
+version: '1.0.0'
+main: dev.dunkleente.Main
+api-version: '1.21'
+authors: [ DunkleEnte ]
+website: www.github.com/dunkleente
