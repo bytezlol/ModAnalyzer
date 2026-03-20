@@ -1,0 +1,10 @@
+# Mod Analyzer config
+# List the plugin message channels that should trigger a detection kick.
+
+# Examples: "voicechat:state", "fabric-screen-handler-api:open_screen", "lunar:player"
+blocked-channels:
+  - voicechat:state
+
+# Message shown to the kicked player (MiniMessage format)
+kick-message: "<white>You have been kicked for using illegal mods."
+admin-message: "<#9EFB00><b>DETECTION</b> <dark_gray>▶ <#9EFB00>{player} <white>has been kicked for using illegal mods."

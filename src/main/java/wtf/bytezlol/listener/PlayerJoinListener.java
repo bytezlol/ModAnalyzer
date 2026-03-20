@@ -1,19 +1,11 @@
-package dev.dunkleente.listener;
+package wtf.bytezlol.listener;
 
-import dev.dunkleente.Main;
-import dev.dunkleente.handler.DetectionHandler;
+import wtf.bytezlol.Main;
+import wtf.bytezlol.handler.DetectionHandler;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerRegisterChannelEvent;
-import org.jetbrains.annotations.NotNull;
 
-/**
- * PlayerJoinListener
- *
- * @author DunkleEnte
- * @since 19.03.2026
- */
 public class PlayerJoinListener implements Listener {
 
     public PlayerJoinListener() {
@@ -25,7 +17,7 @@ public class PlayerJoinListener implements Listener {
         if(!event.getChannel().equalsIgnoreCase("voicechat:state")) return;
         if(event.getPlayer().hasPermission("detection.bypass")) return;
 
-        DetectionHandler.handleDetected(event.getPlayer());
+        DetectionHandler.handle(event.getPlayer());
 
         Main.getInstance().getLogger().info(event.getPlayer().getName() + " joined with channel" + event.getChannel());
     }

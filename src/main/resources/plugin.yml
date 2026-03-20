@@ -1,6 +1,16 @@
-name: mod-detection
-version: '1.0.0'
-main: dev.dunkleente.Main
+name: ModAnalyzer
+version: '1.0'
+main: wtf.bytezlol.Main
 api-version: '1.21'
-authors: [ DunkleEnte ]
-website: www.github.com/dunkleente
+authors: [ Bytezlol ]
+website: bytez.wtf
+bootstrapper: wtf.bytezlol.Bootstrapper
+loader: wtf.bytezlol.Loader
+
+permissions:
+  detection.admin:
+    description: Receive alerts when a player is detected using illegal mods.
+    default: op
+  detection.bypass:
+    description: Bypass mod detection entirely.
+    default: false

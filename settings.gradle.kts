@@ -1,1 +1,1 @@
-rootProject.name = "mod-detection"
+rootProject.name = "ModAnaylzer"
