@@ -1,11 +1,9 @@
 name: ModAnalyzer
 version: '1.0'
-main: wtf.bytezlol.Main
+main: wtf.bytezlol.ModAnalyzer
 api-version: '1.21'
 authors: [ Bytezlol ]
 website: bytez.wtf
-bootstrapper: wtf.bytezlol.Bootstrapper
-loader: wtf.bytezlol.Loader
 
 permissions:
   detection.admin:

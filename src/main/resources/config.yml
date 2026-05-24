@@ -1,6 +1,6 @@
 # Mod Analyzer config
-# List the plugin message channels that should trigger a detection kick.
 
+# List the plugin message channels that should trigger a detection kick.
 # Examples: "voicechat:state", "fabric-screen-handler-api:open_screen", "lunar:player"
 blocked-channels:
   - voicechat:state

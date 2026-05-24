@@ -1,6 +1,6 @@
 package wtf.bytezlol.listener;
 
-import wtf.bytezlol.Main;
+import wtf.bytezlol.ModAnalyzer;
 import wtf.bytezlol.handler.DetectionHandler;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -9,7 +9,7 @@ import org.bukkit.event.player.PlayerRegisterChannelEvent;
 public class PlayerJoinListener implements Listener {
 
     public PlayerJoinListener() {
-        Main.getInstance().getServer().getPluginManager().registerEvents(this, Main.getInstance());
+        ModAnalyzer.getInstance().getServer().getPluginManager().registerEvents(this, ModAnalyzer.getInstance());
     }
 
     @EventHandler
@@ -19,6 +19,6 @@ public class PlayerJoinListener implements Listener {
 
         DetectionHandler.handle(event.getPlayer());
 
-        Main.getInstance().getLogger().info(event.getPlayer().getName() + " joined with channel" + event.getChannel());
+        ModAnalyzer.getInstance().getLogger().info(event.getPlayer().getName() + " joined with channel" + event.getChannel());
     }
 }

@@ -1,5 +1,6 @@
 package wtf.bytezlol;
 
+import lombok.SneakyThrows;
 import wtf.bytezlol.listener.ChannelListener;
 import org.bukkit.plugin.java.JavaPlugin;
 import wtf.bytezlol.listener.ChannelRegisterListener;
@@ -8,19 +9,20 @@ import java.util.List;
 import lombok.Getter;
 
 @Getter
-public final class Main extends JavaPlugin {
+public final class ModAnalyzer extends JavaPlugin {
 
     @Getter
-    private static Main instance;
+    private static ModAnalyzer instance;
 
     private List<String> blockedChannels;
     private String kickMessage;
     private String adminMessage;
 
-    public Main() {
+    public ModAnalyzer() {
         instance = this;
     }
 
+    @SneakyThrows
     @Override
     public void onEnable() {
         saveDefaultConfig();

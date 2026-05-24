@@ -1,6 +1,6 @@
 package wtf.bytezlol.handler;
 
-import wtf.bytezlol.Main;
+import wtf.bytezlol.ModAnalyzer;
 import wtf.bytezlol.utility.ColorUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
@@ -20,7 +20,7 @@ public final class DetectionHandler {
     public static void handle(final @NotNull Player player) {
         if (!pending.add(player.getUniqueId())) return;
 
-        final Main plugin = Main.getInstance();
+        final ModAnalyzer plugin = ModAnalyzer.getInstance();
 
         final String adminMessage = plugin.getAdminMessage()
                 .replace("{player}", player.getName());

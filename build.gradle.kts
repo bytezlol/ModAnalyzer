@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.run.paper)
 }
 
-group = "dev.dunkleente"
+group = "wtf.bytez"
 version = "1.0"
 
 repositories {
