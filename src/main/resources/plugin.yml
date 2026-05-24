@@ -1,6 +1,6 @@
 name: ModAnalyzer
 version: '1.0'
-main: wtf.bytezlol.ModAnalyzer
+main: wtf.bytez.ModAnalyzer
 api-version: '1.21'
 authors: [ Bytezlol ]
 website: bytez.wtf

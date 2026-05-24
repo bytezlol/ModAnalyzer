@@ -1,7 +1,7 @@
-package wtf.bytezlol.handler;
+package wtf.bytez.handler;
 
-import wtf.bytezlol.ModAnalyzer;
-import wtf.bytezlol.utility.ColorUtil;
+import wtf.bytez.ModAnalyzer;
+import wtf.bytez.utility.ColorUtil;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

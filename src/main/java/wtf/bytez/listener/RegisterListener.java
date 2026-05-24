@@ -1,15 +1,15 @@
-package wtf.bytezlol.listener;
+package wtf.bytez.listener;
 
-import wtf.bytezlol.ModAnalyzer;
-import wtf.bytezlol.handler.DetectionHandler;
+import wtf.bytez.ModAnalyzer;
+import wtf.bytez.handler.DetectionHandler;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerRegisterChannelEvent;
 import org.jetbrains.annotations.NotNull;
 
-public final class ChannelRegisterListener implements Listener {
+public final class RegisterListener implements Listener {
 
-    public ChannelRegisterListener() {
+    public RegisterListener() {
         ModAnalyzer.getInstance().getServer().getPluginManager().registerEvents(this, ModAnalyzer.getInstance());
     }
 

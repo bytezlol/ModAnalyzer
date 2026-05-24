@@ -1,4 +1,4 @@
-package wtf.bytezlol.utility;
+package wtf.bytez.utility;
 
 import lombok.experimental.UtilityClass;
 import net.kyori.adventure.text.Component;

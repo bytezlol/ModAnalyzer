@@ -1,9 +1,10 @@
-package wtf.bytezlol;
+package wtf.bytez;
 
 import lombok.SneakyThrows;
-import wtf.bytezlol.listener.ChannelListener;
+import wtf.bytez.listener.ChannelListener;
 import org.bukkit.plugin.java.JavaPlugin;
-import wtf.bytezlol.listener.ChannelRegisterListener;
+import wtf.bytez.listener.PlayerJoinListener;
+import wtf.bytez.listener.RegisterListener;
 
 import java.util.List;
 import lombok.Getter;
@@ -29,7 +30,8 @@ public final class ModAnalyzer extends JavaPlugin {
         loadConfigValues();
 
         new ChannelListener();
-        new ChannelRegisterListener();
+        new RegisterListener();
+        new PlayerJoinListener();
     }
 
     @Override

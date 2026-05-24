@@ -1,10 +1,10 @@
-package wtf.bytezlol.listener;
+package wtf.bytez.listener;
 
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.messaging.PluginMessageListener;
 import org.jetbrains.annotations.NotNull;
-import wtf.bytezlol.ModAnalyzer;
-import wtf.bytezlol.handler.DetectionHandler;
+import wtf.bytez.ModAnalyzer;
+import wtf.bytez.handler.DetectionHandler;
 
 public final class ChannelListener implements PluginMessageListener {
 
